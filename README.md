@@ -45,5 +45,26 @@ Lista de comandos de git.
  * Para poder ver el detalle del commit usamos
 
     ```bash
-    git show
+    git show id-del-commit
     ```
+ * Para ver la rama actual
+   ```bash
+   git brach
+   ```
+
+ * Cambiar a la rama main
+   ```bash
+   git brach -M main
+   ```
+ * Para enviar al origin del remote (conectar con el repositorio de github).
+   ```bash
+   git remote add origin link-del-repositorio
+   ```
+ * Muestra las url del proyecto.
+   ```bash
+   git remote -v
+   ```
+ * Enviar la version commiteada al repositorio.
+   ```bash
+   git push origin nombre-de-la-rama
+   ```
