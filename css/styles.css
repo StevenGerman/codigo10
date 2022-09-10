@@ -11,39 +11,45 @@ h1 {
     font-size: 20px;
 
 }
-h1[role="titulo"]{
-    color: black;
-}
-/* Selector de clase */
-.titulo{
-    color: red;
-    font-size: 30px;
-    background-color: aqua;
-}
 
-.big_table th, td{
-    padding: 20px;
-    font-size: 20px;
-}
-.big_table{
-    margin: auto;
-    border: 1px solid gray;
-}
-.big_table tr:nth-of-type(even){
-    background-color: #1945e248;
-}
-
-.big_table th{
-    background-color: aquamarine;
-
-    
-}
-
-
-#titulo_huawei{
-    color:yellow;
-}
-/* Selecotr de ID*/
 #div_temas {
     display: none;
+}
+
+.audifono img{
+    height: 170px;
+}
+.iphone h2{
+    color:red;
+
+}
+.iphone h3{
+    color: rosybrown;
+    text-align: right;
+}
+
+.audifono h2{
+    color: green;
+}
+.audifono h3{
+    color: aqua;
+    text-align: right;
+
+}
+
+.laptop h2{
+    color: blue;
+}
+.laptop h3{
+    color: cadetblue;
+    text-align: right;
+}
+
+.product_cell{
+    margin-right: 20px;
+    width: 199px; 
+    height: 280px;
+    border: 2px solid red; 
+    border-radius: 10px;
+    padding: 10px;
 }
