@@ -12,28 +12,28 @@
     <form action="">
         <!-- Lo que esta adentro son las partes del formulario -->
         <p>
-            <input type="text" placeholder="Ingrese su nombre">
+            <input value="pep" readonly required name="nombre" type="text" placeholder="Ingrese su nombre">
         </p>
 
         <p>
-            <input type="number" placeholder="Ingrese su edad">
+            <input required name="edad"type="number" placeholder="Ingrese su edad">
         </p>
 
         <p>
-            <input type="email" placeholder="Ingrese su correo">
+            <input required name="email"type="email" placeholder="Ingrese su correo">
         </p>
         
         <p>
-            <input type="password" placeholder="Ingrese su contraseña">
+            <input required name="contraseña"type="password" placeholder="Ingrese su contraseña">
         </p>
 
         <p>
-            <input type="date">
+            <input required type="date">
         </p>
 
         <!-- Lista de opciones-->
         <p>
-            <select name="" id="">
+            <select required>
                 <option value="" disabled selected>Seleccione un curso</option>
                 <option value="">Curso React</option>
                 <option value="">Curso Angular</option>
