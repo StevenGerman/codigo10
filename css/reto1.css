@@ -97,3 +97,8 @@ button{
     gap: 15px;
     font-weight:700;
 }
+
+button:hover{
+    cursor: pointer;
+    background-color:hsl(158, 46%, 25%);
+}
