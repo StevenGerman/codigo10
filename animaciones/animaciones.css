@@ -1,0 +1,101 @@
+body{
+    font-family: Helvetica, sans-serif;
+    background-color: rgba(7, 6, 6, 0.61);
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+p{
+    /*Partes de una animacion*/
+    /*?Tiempo*/
+    animation-duration: 4s;
+    /*El tiempo de una animacion puede ser en segundos(s) o en milisegundos(ms)*/
+    /*Nombre de la animacion*/
+    animation-name: primera-animacion;
+    /*Esta propiedad da la posibilidd el numero de veces 
+    que queramos que se haga la animacion*/
+    animation-iteration-count: 4;
+
+    /*animation-iteration-count: 4; 
+    repite 4  veves la animacion
+    animation-iteration-count: infinite;
+    repite para siempre la animation.
+    */
+    
+    animation-direction: alternate;
+
+
+
+}
+
+/* Tenemo que enlazar 
+nuestra animacion con nustro keyframes*/
+/*Y esto se da por el nombre*/
+
+@keyframes primera-animacion{
+    /*Lo que esta adentro de nustro keyframes 
+    se llaman: Fotogramas.*/
+    /*Desde donde? El inicio de la animacion*/
+    from{
+        margin-left: 100%;
+        padding-top: 5px;
+
+    }
+    /*Hacia donde? El final de la animacion*/
+    to{
+        color: green;
+        font-size: 30px;
+        margin-right: 100%;
+        background-color: black;
+        font-weight: 900;
+    }
+}
+
+h1 {
+    font-size: 70px;
+    color: #ffc107;
+    font-family: "Arial Black", Gadget, sans-serif;
+    text-shadow: 0px 0px 0 rgb(250, 188, 2), 1px 1px 0 rgb(245, 183, 0),
+      2px 2px 0 rgb(240, 178, 0), 3px 3px 0 rgb(235, 173, 0),
+      4px 4px 0 rgb(230, 168, 0), 5px 5px 0 rgb(225, 163, 0),
+      6px 6px 0 rgb(220, 158, 0), 7px 7px 0 rgb(215, 153, 0),
+      8px 8px 0 rgb(210, 148, 0), 9px 9px 0 rgb(205, 143, 0),
+      10px 10px 0 rgb(200, 138, 0), 11px 11px 10px rgba(0, 0, 0, 0.6),
+      11px 11px 1px rgba(0, 0, 0, 0.5), 0px 0px 10px rgba(0, 0, 0, 0.2);
+
+      animation-duration: 6s;
+      animation-name: screen-saver;
+      animation-iteration-count: infinite;
+      animation-direction: alternate;
+  }
+
+  @keyframes screen-saver {
+    
+    from{
+        margin-left: 100%;
+    }
+    to{
+        margin-right: 100%;
+    }
+    /*Porcentajes de fotogramas*/
+    10%{
+        margin-top: 500px;
+    }
+    30%{
+        margin-top: -500px;
+    }
+    50%{
+        margin-top: 500px;
+    }
+    70%{
+        margin-top: 500px;
+    }
+    90%{
+        margin-top: -500px;
+    }
+    100%{
+        margin-top: 0px;
+    }
+  }
